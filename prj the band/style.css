@@ -1,0 +1,353 @@
+* {
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+/* dùng chung */
+.form-title{
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 90px;
+    margin-bottom: 30px;
+    font-weight: 500;
+}
+.form-signature{
+    text-align: center;
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+    opacity:0.7;
+}
+    /* end */
+
+header{
+    height: 46px;
+    width: 100%;
+    background: hsl(0, 0%, 0%);
+    position: fixed;
+    top: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    z-index: 1;
+}
+.header-list{
+    display: inline-block;
+    color: white;
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 14.4px 24px;
+    background: #000;
+    float: left;
+    cursor: pointer;
+    list-style: none;
+}
+.header-list:hover{
+    background: #ccc;
+    color: #000;
+}
+.header-list:hover .header-list-name{
+    background: #ccc;
+    color: #000;
+}
+.header-list-name{
+    font-size: 15px;
+    color: white;
+    text-decoration: none;
+    position: relative;
+    
+}
+.more-list{
+    position: absolute;
+    top:46px;
+    background: white;
+    box-shadow: 1px 1px 1px 1px #888888;
+
+
+}
+.more-list-item{
+    display: block;
+    color: rgb(255, 255, 255);
+    background: white;
+    padding: 8px 16px;
+}
+.more-list-item:hover{
+    background-color: #ccc;
+    color: black;
+}
+.more-list-item .more-list-sub{
+    text-decoration: none;
+    color:black;
+}
+.more-sub{
+    display: none;
+    margin-left: -24px;
+    background: white;
+    /* box-shadow: 1px 1px 1px 0px #888888; */
+
+}
+.header-list--hover:hover .more-sub{
+    display:block;
+} 
+.header__search{
+    color: white;
+    background-color: rgb(0, 0, 0);
+    float: right;
+    padding: 13.7px 17px;
+    cursor: pointer;
+}
+.header__search:hover{
+    background-color: #f44336;
+}
+/* end header  */
+.slider__img{
+    margin-top: 46px;
+    background: url(https://www.w3schools.com/w3images/la.jpg) top center / cover no-repeat; 
+    padding-top:50%;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.sld-display{
+    position: absolute;
+   bottom: 0;
+}
+.sld-img-describe{
+    padding: 16px 0 46px 0;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    color: white;
+}
+.sld-img-title{
+    padding-bottom:90px;
+    font-size: 24px;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+    color:white;
+}
+.sld-center{
+    right:50%;
+    transform: translateX(50%);
+}
+/* end slider  */
+.about{
+    background-color: white;
+    height:500px;
+}
+.about-describe{
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.about-describe-sub{
+    text-align: justify;
+    margin: 20px 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.4;
+}
+.about-team{
+    width: 800px;
+    margin:50px auto 50px auto;
+    display:flex;
+    overflow: hidden;
+    
+}
+.team-member{
+    margin: 0 50px;
+    width: 33.33%;
+    max-height: 200px;
+    object-fit: center;
+}
+.team-name{
+    text-align: center;
+    margin-bottom:15px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.team-img{
+    text-align: center;
+    border-radius: 5px;
+    max-width: 155px;
+    max-height: 155px;
+    width: 100%;
+}
+/* end about team  */
+.tour{
+    background: #000;
+}
+.tour-margin{
+    margin-top: 75px;;
+}
+.tour-padding{
+    padding-top:25px;
+}
+.tour-padding h2, .tour-padding p{
+    color:white;
+}
+.tour-date{
+    width: 800px;
+    margin:40px auto 0px auto;
+   
+}
+.tour-date-sub{
+    background-color: white;
+    color:rgba(0,0,0,0.7);
+    list-style: none;
+    padding:10px 20px;
+    border-bottom: 1px solid #ddd;
+    font-family: Arial, Helvetica, sans-serif;
+ align-items: center;
+}
+.sold-out{
+    color:white;
+    background: #f44336;
+    font-size: 15px;
+    margin-left:16px;
+    padding:4px 8px;
+}
+.tour-number{
+    background: #000;
+    color:white;
+    float:right;
+    padding:4px 7px;
+    border-radius: 50%;
+    transform: translateY(-3px);
+}
+.tour-date ul{
+    padding-bottom:30px;
+}
+.about-location{
+    width: 800px;
+    margin: 0px auto;
+    padding-bottom: 110px;
+}
+
+.location-detail{
+    padding: 15px 20px;
+}
+.about-location-list{
+    margin:0 8px;
+    background:white;
+    width: calc( 33.33% - 18.7px );
+    max-height: 390px;
+    display: inline-block;
+    overflow: hidden;
+}
+.location-picture{
+   object-fit: cover;
+   
+}
+.location-picture-sub{
+    width: 100%;
+    max-height: 185px;
+    min-width: 250px;
+    min-height: 185px;
+}
+.location-picture-sub:hover{
+    opacity: 0.7;
+}
+.location,.location-date{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    margin-bottom: 25px;
+}
+.location-date{
+     opacity: 0.7;
+}
+.location-describe{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+.location-buy{
+    font-size: 15px;
+    border: none;
+    padding:10px 16px;
+    background: black;
+    color:white;
+    cursor: pointer;
+}
+.location-buy:hover{
+    color:black;
+    background: #ccc;
+}
+/* contact  */  
+.contact{
+    width: 800px;
+    margin: 0 auto;
+    padding-bottom: 110px;
+}
+.contact-margin{
+    margin-bottom: 60px;
+}
+.contact-sub{
+    display: flex;
+    justify-content: space-between;
+}
+.contact-infor{
+    width: 50%;
+}
+.contact-info-user{
+    width: 50%;
+}
+.contact-infor-details{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    list-style: none;
+}
+.contact-icon{
+    padding-right:10px;
+    margin-bottom: -2px;
+}
+.user-infor {
+    padding: 8px 4px;
+    margin-bottom: 10px;
+    border-radius: none;
+}
+.user-messenger{
+    width: 100%;
+}
+.user-name,.user-email{
+    width: calc(50% - 2px);
+}
+.contact-send{
+    margin-top: 5px;
+    border: none;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    padding: 8px 16px;
+    color: white;
+    background-color: black;
+    display: block;
+    float: right;
+    cursor: pointer;
+}
+.contact-send:hover{
+    background: #ccc;
+    color: black;
+}
+.map-img{
+width: 100%;
+object-fit: cover;
+}
+.social{
+    height: 220px;
+    text-align: center;
+}
+.social-icon{
+    margin-top: 70px;
+}
+.social-icon i{
+    opacity: 0.7;
+    font-size: 24px;
+}
+.social-icon p{
+    margin-top: 30px;
+    font-size: 15px;
+    opacity: 0.7;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.social-icon-active:hover{
+    opacity: 0.5;
+}

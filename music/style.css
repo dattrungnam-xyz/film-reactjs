@@ -1,0 +1,28 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.header-left {
+    width: 24rem;   
+    height: 100vh;
+    background: #2a213a;
+}
+
+.header-contain{
+    width: 100%;
+    height: 100%;
+    padding: 1.5rem 3rem; 
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.header-logo{
+    width: 100%;
+    height: 3rem;
+}
